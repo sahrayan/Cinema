@@ -5,7 +5,7 @@ class Genre{
     public function __construct($genre){
         $this->_genre = $genre;
 
-    
+    }
     public function getGenre()
     {
         return $this->_genre;
