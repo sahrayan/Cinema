@@ -18,5 +18,6 @@ class Acteur extends Personnage {
             echo $casting->getFilm()->getTitle()." dans lequel il incarne " .$casting->getRole()->getName()."<br>";
         }
     }
+    
 }
 ?>
