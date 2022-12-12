@@ -10,8 +10,9 @@ class film{
         $this->_titre = $titre;
         $this->_date = $date;
         $this->_genre = $genre;
-}
 
+    }
+}
 
 
 ?>
