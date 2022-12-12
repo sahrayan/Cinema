@@ -2,7 +2,7 @@
 class Casting{
     private string $_film;
     private string $_role;
-    private string $_acteur:
+    private string $_acteur;
 
     public function __construct(string $film, string $role, string $acteur){
         $this->_film = $film;
