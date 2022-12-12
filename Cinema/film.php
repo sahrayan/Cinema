@@ -1,5 +1,5 @@
 <?php 
-class film{
+class Film{
     private string $_titre;
     private string $_date;
     private Genre $_genre;
