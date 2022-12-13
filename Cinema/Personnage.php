@@ -3,9 +3,9 @@ class Personnage{
     private string $_nom;
     private string $_prenom;
     private string $_sex;
-    private int $_anniversaire;
+    private string $_anniversaire;
 
-    public  function __construct(string $nom, string $prenom, string $sex,int $anniversaire){
+    public  function __construct(string $nom, string $prenom, string $sex,string $anniversaire){
         $this->_nom = $nom;
         $this->_prenom = $prenom;
         $this->_sex = $sex;
@@ -34,7 +34,7 @@ class Personnage{
     public function setSex(string $sex){
         $this->_sex = $sex;
     }
-    public function setAnniversaire(int $anniversaire){
+    public function setAnniversaire(string $anniversaire){
         $this->_anniversaire = $anniversaire;
     }
 }
