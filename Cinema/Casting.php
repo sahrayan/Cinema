@@ -13,7 +13,7 @@ class Casting{
         $this->_acteur->addCasting($this);
     }
 
-    public function getFilm(): string{
+    public function getFilm(){
         return $this->_film;
     }
 
@@ -24,6 +24,12 @@ class Casting{
     public function getActeur(){
         return $this->_acteur;
     }
-
+    public function getCasting(){
+        return $this->getFilm()." ". $this->getRole()." ". $this->getActeur()."<br>";
+    }
+    public function __toString()
+    {
+        $this->getFilm(). $this->getRole(). $this->getActeur();
+    } 
 }
 ?>
