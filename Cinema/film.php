@@ -13,8 +13,16 @@ class Film{
         $this->_realisateur = $realisateur;
         $this->_realisateur->addFilm($this);
         $this->_genre->addFilm($this);
+        $this->_casting = [];
 
     }
+    public function getInfoCastings(){
+        foreach($this->_casting as $film);
+    }
+    public function addCasting($NewCasting){
+        $this->_casting[] = $NewCasting;
+    }    
+
     public function getTitre(){
         return $this->_titre;
     }
@@ -27,21 +35,16 @@ class Film{
     public function getRealisateur(){
         return $this->_realisateur;
     }
-    public function setTitre($titre){
-        $this->_titre = $titre;
+
+    public function getInfoFilm(){
+        return $this->getTitre(). " (".$this->getDate(). ") / ".$this ->getGenre(). " / réalisé par ". $this->getRealisateur();
     }
-    public function setDate($date){
-        $this->_date = $date;
-    }
-    public function setGenre(Genre $genre){
-        $this->_genre = $genre;
-    }
-    public function setRealisateur( Realisateur $realisateur){
-        $this->_realisateur = $realisateur;
-    }
+
+
+
     public function __toString()
     {
-        return $this->getTitre(). " (".$this->getDate(). ") / ".$this ->getGenre(). " / réalisé par ". $this->getRealisateur();
+        return $this->getTitre(). " (".$this->getDate(). ") ";
     }
 }
 
