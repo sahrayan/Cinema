@@ -39,7 +39,10 @@ class Film{
     public function setRealisateur( Realisateur $realisateur){
         $this->_realisateur = $realisateur;
     }
-
+    public function __toString()
+    {
+        return $this->getTitre(). " ".$this->getDate(). " ".$this ->getGenre(). " ". $this->getRealisateur();
+    }
 }
 
 
