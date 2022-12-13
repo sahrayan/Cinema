@@ -6,6 +6,7 @@ class Realisateur extends Personnage{
         parent::__construct($nom,$prenom,$sex,$anniversiare);
         $this->_films =[];
     }
+  
     public function addFilm($film)
     {
         $this->_films[] = $film;
@@ -15,7 +16,11 @@ class Realisateur extends Personnage{
         foreach ($this->_films as $film){
             $result.= $film;
         }
-     return $result;
+        return $result;
+    }
+    public function __toString()
+    {
+        return $this->getNom()." ".$this -> getPrenom(). " ".$this -> getSex(). " ".$this -> getAnniversaire();
     }
 
 
