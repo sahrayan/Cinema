@@ -2,13 +2,15 @@
 class Casting{
     private Film $_film;
     private Role $_role;
-    private Personnage $_personnage;
+    private Acteur $_acteur;
 
-    public function __construct($film, $role, $personnage){
+    public function __construct($film, $role, $acteur){
         $this->_film = $film;
         $this->_film->addCasting($this);
         $this->_role = $role;
-        $this->_personnage = $personnage;
+        $this->_role->addCasting($this);
+        $this->_acteur = $acteur;
+        $this->_acteur->addCasting($this);
     }
 
     public function getFilm(): string{
@@ -19,9 +21,9 @@ class Casting{
         return $this->_role;
     }
 
-    public function getPersonnage(){
-        return $this->_personnage;
+    public function getActeur(){
+        return $this->_acteur;
     }
-    
+
 }
 ?>
