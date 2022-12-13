@@ -25,17 +25,27 @@ class Genre{
     {
         $this->_films[] = $film;
     }
+    public function dispGenre(){
+        $result = "film de genre $this";
+        foreach ($this->_films as $film){
+            $result.= $film;
+        }
+     return $result;
+    }
+    public function __toString()
+    {
+        return $this->getGenre();
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
 ?>
