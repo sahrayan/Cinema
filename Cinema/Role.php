@@ -1,12 +1,11 @@
 <?php
 class Role{
     public  $_nom;
-    private  $_films;
     private array $_casting;
 
-    public function __construct($nom,$films){
+    public function __construct($nom){
         $this->_nom = $nom;
-        $this->_films = $films;
+        
         $this->_casting = [];
     }
 
@@ -19,18 +18,18 @@ class Role{
         return $this->_nom;
     }
     
-    public function setNom($nom){
-        $this->_nom = $nom;
-    }
+    
+    public function getListeActeur(){
+        foreach($this->_casting as $acteur){
+            return $acteur;
+        }
 
-    public function getFilms()
-    {
-        return $this->_films;
     }
-
-    public function setFilms($films)
+    
+    public function __toString()
     {
-        $this->_films = $films;
+        return $this->_nom;
     }
+        
 }
 ?>
