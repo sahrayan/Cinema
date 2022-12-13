@@ -1,25 +1,27 @@
 <?php
 class Casting{
-    private string $_film;
-    private string $_role;
-    private string $_acteur;
+    private Film $_film;
+    private Role $_role;
+    private Personnage $_personnage;
 
-    public function __construct(string $film, string $role, string $acteur){
+    public function __construct($film, $role, $personnage){
         $this->_film = $film;
+        $this->_film->addCasting($this);
         $this->_role = $role;
-        $this->_acteur = $acteur;
+        $this->_personnage = $personnage;
     }
 
     public function getFilm(): string{
         return $this->_film;
     }
 
-    public function getRole(): string{
+    public function getRole(){
         return $this->_role;
     }
 
-    public function getActeur(): string{
-        return $this->_acteur;
+    public function getPersonnage(){
+        return $this->_personnage;
     }
+    
 }
 ?>
