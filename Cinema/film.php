@@ -41,7 +41,7 @@ class Film{
     }
     public function __toString()
     {
-        return $this->getTitre(). " ".$this->getDate(). " ".$this ->getGenre(). " ". $this->getRealisateur();
+        return $this->getTitre(). " (".$this->getDate(). ") / ".$this ->getGenre(). " / réalisé par ". $this->getRealisateur();
     }
 }
 
