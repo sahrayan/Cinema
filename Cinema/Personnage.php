@@ -25,17 +25,5 @@ class Personnage{
         return $this->_anniversaire;
     }
 
-    public function setNom(string $nom){
-        $this->_nom = $nom;
-    }
-    public function setPrenom(string $prenom){
-        $this->_prenom = $prenom;
-    }
-    public function setSex(string $sex){
-        $this->_sex = $sex;
-    }
-    public function setAnniversaire(string $anniversaire){
-        $this->_anniversaire = $anniversaire;
-    }
 }
 ?>
