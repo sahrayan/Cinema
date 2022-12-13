@@ -13,12 +13,15 @@ class Acteur extends Personnage {
     }
 
 
-    public function listCasting(){
-        echo "L'acteur " .$this->getNom()." ".$this->getPrenom(). "a participer au films:<br>";
-        foreach($this->_casting as $nouveauCasting){
-            echo $nouveauCasting->getFilm()->getTitle()." dans lequel il incarne " .$nouveauCasting->getRole()->getName()."<br>";
-        }
+    public function getInfoActeur(){
+        $this->getNom()." ".$this -> getPrenom(). " ".$this -> getSex(). " ".$this -> getAnniversaire();
     }
+ 
+    public function __toString()
+    {
+        return $this->getNom()." ".$this -> getPrenom(). " ".$this -> getSex(). " ".$this -> getAnniversaire();
+    }
+
     
 }
 ?>
