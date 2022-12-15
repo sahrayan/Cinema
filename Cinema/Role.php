@@ -30,6 +30,11 @@ class Role{
     {
         return $this->_nom;
     }
-        
+    
+
+
+
+
+
 }
 ?>
