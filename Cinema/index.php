@@ -24,9 +24,9 @@ $casting2 = new Casting($film2,$role2,$acteur2);
 
 
 
-echo $film2->getInfoFilm(). "<br>";
-echo $casting2->getCasting();
-echo $real2->dispRealisateur();
+// echo $film2->getInfoFilm(). "<br>";
+// echo $casting2->getCasting();
+// echo $real2->dispRealisateur();
 echo $action2->dispGenre();
 
 
