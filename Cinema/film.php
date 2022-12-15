@@ -46,6 +46,32 @@ class Film{
     {
         return $this->getTitre(). " (".$this->getDate(). ") ";
     }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
