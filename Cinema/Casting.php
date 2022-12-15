@@ -25,7 +25,7 @@ class Casting{
         return $this->_acteur;
     }
     public function getCasting(){
-        return $this->getFilm()." ". $this->getRole()." ". $this->getActeur()."<br>";
+        return $this->getFilm()." Le role de ". $this->getRole()." a été incarné par ". $this->getActeur()."<br>";
     }
     public function __toString()
     {
