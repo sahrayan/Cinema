@@ -11,18 +11,18 @@ class Realisateur extends Personnage{
     {
         $this->_films[] = $film;
     }
+    public function __toString()
+    {
+        return $this->getNom()." ".$this -> getPrenom(). " ".$this -> getSex(). " ".$this -> getAnniversaire();
+    }
+    
     public function dispRealisateur(){
-        $result = "film de $this";
+    $result = "Film realiser par $this ";
         foreach ($this->_films as $film){
             $result.= $film;
         }
         return $result;
     }
-    public function __toString()
-    {
-        return $this->getNom()." ".$this -> getPrenom(). " ".$this -> getSex(). " ".$this -> getAnniversaire();
-    }
-
 
 
 }
