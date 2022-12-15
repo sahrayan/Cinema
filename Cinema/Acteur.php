@@ -22,11 +22,11 @@ class Acteur extends Personnage {
         return $this->getNom()." ".$this -> getPrenom(). " ".$this -> getSex(). " ".$this -> getAnniversaire();
     }
 
-//     public function listCasting(){
-//         echo "L'acteur " .$this->getPrenom()." ".$this->getNom(). "a participer au films:<br>";
-//         foreach($this->_casting as $nouveauCasting){
-//             echo $nouveauCasting->getFilm()->getTitre()." dans lequel il incarne " .$nouveauCasting->getRole()->getNom()."<br>";
-//         }
-//     }
+    public function listCasting(){
+        echo "<br> L'acteur " .$this->getPrenom()." ".$this->getNom(). " a participer au films:<br>";
+        foreach($this->_casting as $nouveauCasting){
+            echo $nouveauCasting->getFilm()->getTitre()." dans lequel il incarne " .$nouveauCasting->getRole()->getNom()."<br>";
+        }
+    }
  }
 ?>
