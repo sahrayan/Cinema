@@ -20,8 +20,8 @@ class Role{
     
     
     public function getListeActeur(){
-        foreach($this->_casting as $acteur){
-            return $acteur;
+        foreach($this->_casting as $casting){
+            return $casting->getActeur();
         }
 
     }
