@@ -17,14 +17,14 @@ class Realisateur extends Personnage{
     }
     
     public function dispRealisateur(){
-    $result = "Film realiser par $this ";
+    $result = "Film realiser par $this  : ";
         foreach ($this->_films as $film){
             $result.= $film;
         }
         return $result;
     }
 
-
+    
 }
 
 
