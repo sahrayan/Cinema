@@ -4,7 +4,7 @@ class Casting{
     private Role $_role;
     private Acteur $_acteur;
 
-    public function __construct($film, $role, $acteur){
+    public function __construct($film, $role, $acteur ){
         $this->_film = $film;
         $this->_film->addCasting($this);
         $this->_role = $role;
