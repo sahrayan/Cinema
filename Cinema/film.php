@@ -16,13 +16,10 @@ class Film{
         $this->_casting = [];
 
     }
-    public function getInfoCastings(){
-        foreach($this->_casting as $film);
-    }
     public function addCasting($NewCasting){
         $this->_casting[] = $NewCasting;
     }    
-
+    
     public function getTitre(){
         return $this->_titre;
     }
@@ -35,11 +32,14 @@ class Film{
     public function getRealisateur(){
         return $this->_realisateur;
     }
-
+    
     public function getInfoFilm(){
         return $this->getTitre(). " (".$this->getDate(). ") / ".$this ->getGenre(). " / réalisé par ". $this->getRealisateur();
     }
-
+    
+    public function getInfoCastings(){
+        foreach($this->_casting as $film);
+    }
 
 
     public function __toString()
