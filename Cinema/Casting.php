@@ -6,13 +6,16 @@ class Casting{
 
     public function __construct($film, $role, $acteur ){
         $this->_film = $film;
+//         rajout d un film dans le casting
         $this->_film->addCasting($this);
         $this->_role = $role;
+//         rajout d un role dans le castng 
         $this->_role->addCasting($this);
         $this->_acteur = $acteur;
+//         rajout d un acteur dans le casting
         $this->_acteur->addCasting($this);
     }
-
+// methode
     public function getFilm(){
         return $this->_film;
     }
