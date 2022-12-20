@@ -1,4 +1,5 @@
 <?php
+// class des personnage et les realisateur d un film
 class Personnage{
     private string $_nom;
     private string $_prenom;
@@ -11,7 +12,7 @@ class Personnage{
         $this->_sex = $sex;
         $this->_anniversaire = $anniversaire;
     }
-
+// methode
     public function getNom(){
         return $this->_nom;
     }
