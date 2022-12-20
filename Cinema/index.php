@@ -1,5 +1,5 @@
 <?php
-// pour utiliser tout les fichiers dans le dossier 
+// pour utiliser tout les fichiers dans le dossier qui ont .php
 
 spl_autoload_register(function ($class_name) {
 
