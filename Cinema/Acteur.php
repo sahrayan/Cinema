@@ -7,12 +7,12 @@ class Acteur extends Personnage {
         $this->_casting = [];
     }
             
-
+// creation d une list casting ou on rajout un casting 
     public function addCasting($nouveauCasting){
         $this->_casting[] = $nouveauCasting;
     }
 
-
+// disp d'un Acteur 
     public function getInfoActeur(){
         $this->getNom()." ".$this -> getPrenom(). " ".$this -> getSex(). " ".$this -> getAnniversaire();
     }
@@ -21,7 +21,7 @@ class Acteur extends Personnage {
     {
         return $this->getNom()." ".$this -> getPrenom(). " ".$this -> getSex(). " ".$this -> getAnniversaire();
     }
-
+// list du Casting du ou des filmes
     public function listCasting(){
         echo "<br> L'acteur " .$this->getPrenom()." ".$this->getNom(). " a participer au films:<br>";
         foreach($this->_casting as $nouveauCasting){
