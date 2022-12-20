@@ -5,10 +5,9 @@ class Role{
 
     public function __construct($nom){
         $this->_nom = $nom;
-        
         $this->_casting = [];
     }
-
+// rajout de casting dans casting
     public function addCasting($nouveauCasting){
         $this->_casting[] = $nouveauCasting;
     }
@@ -18,7 +17,7 @@ class Role{
         return $this->_nom;
     }
     
-    
+//     list des Acteur
     public function getListeActeur(){
         foreach($this->_casting as $casting){
             return $casting->getActeur();
