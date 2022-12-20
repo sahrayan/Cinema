@@ -6,7 +6,7 @@ class Realisateur extends Personnage{
         parent::__construct($nom,$prenom,$sex,$anniversiare);
         $this->_films =[];
     }
-  
+//   nouvrau tableau film ou on rajout un film dedans
     public function addFilm($film)
     {
         $this->_films[] = $film;
