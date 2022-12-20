@@ -21,7 +21,7 @@ $role1 = new Role("Spider-Man");
 $film1 = new Film("Spider-Man","2002",$action,$real1);
 $casting1 = new Casting($film1,$role1,$acteur1);
 $casting1 = new Casting($film1,$role1,$acteur2);
-// film 2$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+// film 2 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $real2 = new Realisateur("Raimi","Sam","Male","23/10/1959");
 $acteur3 = new Acteur("Franco","James","Male","20/08/1983");
 $role2 = new Role("Green");
