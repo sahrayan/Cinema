@@ -30,7 +30,7 @@ $casting2 = new Casting($film2,$role2,$acteur3);
 
 
 
-//Commande pour afficher les info du ou des films : 
+// Fonction pour afficher les info du ou des films : 
 
 
 // echo $film1->getInfoFilm(). "<br>";
