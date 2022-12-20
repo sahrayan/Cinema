@@ -9,11 +9,12 @@ class Genre{
             
 
     }
+//     Methode
     public function getGenre():string
     {
         return $this->_genre;
     }
-
+//  RAJOUT D UN FILM DANS FILM
     public function addFilm($film)
     {
         $this->_films[] = $film;
@@ -22,7 +23,7 @@ class Genre{
     {
         return $this->getGenre();
     }
-    
+//     Genre d un filme action,science etc
     public function dispGenre(){
         $result = "<br> Le film et du genre $this : ";
         foreach ($this->_films as $film){
