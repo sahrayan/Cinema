@@ -16,9 +16,11 @@ class Film{
         $this->_casting = [];
 
     }
+//     rajout de casting dans casting
     public function addCasting($NewCasting){
         $this->_casting[] = $NewCasting;
     }    
+    //method
     
     public function getTitre(){
         return $this->_titre;
@@ -32,7 +34,7 @@ class Film{
     public function getRealisateur(){
         return $this->_realisateur;
     }
-    
+//     info film
     public function getInfoFilm(){
         return $this->getTitre(). " (".$this->getDate(). ") / ".$this ->getGenre(). " / réalisé par ". $this->getRealisateur();
     }
